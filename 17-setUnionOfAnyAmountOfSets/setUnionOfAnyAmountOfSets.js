@@ -1,7 +1,8 @@
 function setUnionOfAnyAmountOfSets(...args) {
   // Insert code here;
 
-  const set = new Set();
+  let set = new Set();
+  let arr = [];
   for(let i = 0; i < args.length; i++)
   {
     set.add(args[i]);
@@ -9,6 +10,8 @@ function setUnionOfAnyAmountOfSets(...args) {
     return set;
   
 }
+
+
 
 // Do not edit this line;
 module.exports = setUnionOfAnyAmountOfSets;

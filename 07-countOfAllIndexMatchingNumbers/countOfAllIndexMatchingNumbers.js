@@ -6,13 +6,18 @@ function countOfAllIndexMatchingNumbers(nums) {
   {
     for(let j = i+1; j < nums.length; j++)
     {
-      if (nums[i] == nums[j])
+      if (nums[i] === nums[j])
       {
         dupcount++;
       }
+
+      else
+      {
+        count++; 
+      }
       
     }
-    count++;  
+     
   }
   if(dupcount > 0)
     return dupcount;
@@ -23,4 +28,4 @@ function countOfAllIndexMatchingNumbers(nums) {
 
 // Do not edit this line;
 module.exports = countOfAllIndexMatchingNumbers;
-//console.log(countOfAllIndexMatchingNumbers([44,22,33]))
+console.log(countOfAllIndexMatchingNumbers([2,1,2,4,4]))
