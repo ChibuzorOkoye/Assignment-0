@@ -6,23 +6,28 @@ class MySolution {
   binarySearch(nums, target) {
     // Insert code here;
 
-    let start = 0;
     let end = nums.length - 1;
 
-    while (start <= end) {
-        let middle = Math.floor((start + end) / 2);
+        let middle = Math.floor(nums.length / 2);
 
-        if (nums[middle] === target) {
+        if (nums[middle] === target) 
+        {
             // found the key
             return true;
-        } else if (nums[middle] < target) {
+        } 
+        else if (nums[middle] < target) 
+        {
             // continue searching to the right
-            start = middle + 1;
-        } else {
+            let arr = nums.slice(middle+1, nums.length);
+        return this.binarySearch(arr, target);
+        } 
+        else if (nums[middle] > target) 
+        {
             // search searching to the left
-            end = middle - 1;
+            let arr = nums.slice(0, middle);
+        return this.binarySearch(arr, target);
         }
-    }
+
 	// key wasn't found
     return false;
 }

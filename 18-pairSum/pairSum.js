@@ -8,7 +8,7 @@ function pairSum(nums, target) {
     {
       for(let j = i+1; j < nums.length; j++)
       {
-        if (nums[i] + nums[j] >= target)
+        if (nums[i] + nums[j] == target)
         {
           check = true;
         }
@@ -24,4 +24,4 @@ function pairSum(nums, target) {
 
 // Do not edit this line;
 module.exports = pairSum;
-console.log(pairSum([20,20],20));
+//console.log(pairSum([20,20], 20));
