@@ -2,14 +2,17 @@ function setUnionOfAnyAmountOfSets(...args) {
   // Insert code here;
 
   let set = new Set();
-  let arr = [];
-  for(let i = 0; i < args.length; i++)
+  for(let i = 0; i < args.length; i++) 
   {
-    set.add(args[i]);
+    for(let j of args[i]) 
+    {
+      set.add(j);
+    }   
   }
-    return set;
-  
+
+  return set;
 }
+
 
 
 
