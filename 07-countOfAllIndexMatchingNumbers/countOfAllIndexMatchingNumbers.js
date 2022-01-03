@@ -13,4 +13,4 @@ function countOfAllIndexMatchingNumbers(nums) {
 
 // Do not edit this line;
 module.exports = countOfAllIndexMatchingNumbers;
-console.log(countOfAllIndexMatchingNumbers([2,1,2,4,4]))
+//console.log(countOfAllIndexMatchingNumbers([2,1,2,4,4]))

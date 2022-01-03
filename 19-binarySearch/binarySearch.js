@@ -37,4 +37,4 @@ class MySolution {
 let StudentSolution = MySolution;
 module.exports = StudentSolution;
 let bin = new MySolution;
-console.log(bin.binarySearch([1,2,3,4], 3))
+//console.log(bin.binarySearch([1,2,3,4], 3))
